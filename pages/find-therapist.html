@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare - Find a Therapist</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link to your existing CSS file -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>MindCare</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="self-assessment.html">Self-Assessment</a></li>
+                    <li><a href="#">Find Therapist</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <body class="no-bg"></body>
+        </div>
+    </header>
+
+    <section class="therapist-suggestions">
+        <h2>Meet Our Recommended Therapists</h2>
+        <div class="therapist-cards">
+            <div class="therapist-card">
+                <img src="../images/therapist1.jpg" alt="Therapist 1">
+                <h3>Dr. Ranbir Kapoor</h3>
+                <p>Specialty: Cognitive Behavioral Therapy</p>
+                <p>Experience: 10 years</p>
+                <a href="mailto:jane.smith@example.com" class="contact-button">Contact</a>
+            </div>
+            <div class="therapist-card">
+                <img src="../images/therapist2.jpg" alt="Therapist 2">
+                <h3>Dr. Kabir Singh</h3>
+                <p>Specialty: Family Therapy</p>
+                <p>Experience: 8 years</p>
+                <a href="mailto:john.doe@example.com" class="contact-button">Contact</a>
+            </div>
+            <div class="therapist-card">
+                <img src="../images/therapist3.jpg" alt="Therapist 3">
+                <h3>Dr. Mrunal Thakur</h3>
+                <p>Specialty: Art Therapy</p>
+                <p>Experience: 5 years</p>
+                <a href="mailto:emily.johnson@example.com" class="contact-button">Contact</a>
+            </div>
+            <!-- Add more therapist cards as needed -->
+        </div>
+    </section>
+    
+
+    <section class="resource-intro">
+        <h2>Find a Therapist</h2>
+        <p>Use the form below to search for qualified therapists in your area.</p>
+    </section>
+
+    <section class="therapist-search">
+        <form id="search-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="City or Zip Code" required>
+
+            <label for="specialty">Specialty:</label>
+            <select id="specialty" name="specialty">
+                <option value="">Select Specialty</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="depression">Depression</option>
+                <option value="trauma">Trauma</option>
+                <option value="family">Family Therapy</option>
+                <option value="children">Children's Therapy</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="insurance">Insurance Accepted:</label>
+            <input type="text" id="insurance" name="insurance" placeholder="Insurance Provider">
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="therapist-results">
+            <h3>Results:</h3>
+            <ul id="results-list">
+                <!-- Results will be dynamically populated here -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MindCare. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
